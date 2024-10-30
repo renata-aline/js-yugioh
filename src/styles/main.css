@@ -132,3 +132,38 @@ body{
 .card:hover{
     transform: scale(1.2);
 }
+
+        /* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container__left, .container__right {
+        width: 100%;
+    }
+
+    .card-box__container, .card-versus__container {
+        height: auto;
+        padding: 0.2rem;
+    }
+
+    .card-infield {
+        height: 8rem;
+        width: 6rem;
+    }
+
+    .card_details {
+        padding: 0.5rem;
+    }
+
+    #card-name, #card-type {
+        font-size: 0.7rem;
+    }
+
+    .score_box {
+        padding: 15px;
+    }
+}

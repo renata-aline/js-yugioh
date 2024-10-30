@@ -121,7 +121,7 @@ async function drawButton(text){
 }
 
 async function updateScore() {
-    state.score.scoreBox.innerText = `Win: ${state.score.playerScore} | Lose: ${state.score.computerScore}`;
+    state.score.scoreBox.innerText = `Win: ${state.score.playerScore} Lose: ${state.score.computerScore}`;
 }
 
 async function checkDuelResults(playerCardId, computerCardId){
@@ -192,11 +192,11 @@ function init(){
     state.fieldCards.player.style.display = "none";
     state.fieldCards.computer.style.display = "none";
     
-    drawCards(5, playerSides.player1);
-    drawCards(5, playerSides.computer);
+    drawCards(4, playerSides.player1);
+    drawCards(4, playerSides.computer);
 
     const bgm = document.getElementById("bgm");
-    // bgm.play();
+    bgm.play();
 }
 
 init();
